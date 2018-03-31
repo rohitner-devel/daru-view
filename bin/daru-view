@@ -3,7 +3,8 @@
 require 'optparse'
 require 'rake'
 
-path = `gem which daru/view`.split('/')[0...-1].join('/')
+# path = `gem which daru/view`.split('/')[0...-1].join('/')
+path = File.expand_path('../lib/daru',__dir__)
 
 parser = OptionParser.new do |opts|
   opts.banner = "Usage: daru-view [options]"
