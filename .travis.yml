@@ -11,7 +11,6 @@ rvm:
 script:
   - bundle exec rspec
   - bundle exec rubocop
-  - gem env
   - gem list
   - ./bin/daru-view -g
   - ./bin/daru-view -H
